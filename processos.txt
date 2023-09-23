@@ -15,7 +15,8 @@ TENHA CERTEZA DE ESTAR DENTRO DA VENV NA HORA DE INSTALAR E RODAR COMANDOS
         python manage.py runserver
     INSTALAR CORE
         python manage.py migrate
-        python manage.py startapp core
+        python manage.py startapp core 
+            core é o nome do seu app
     DEPOIS DE ALTERAR MODELS DO CORE E SETTINGS DO front, TODA VEZ QUE ALTERAR MODELS E  COISAS DO CORE 
         python manage.py makemigrations
         python manage.py migrate
@@ -25,3 +26,6 @@ TENHA CERTEZA DE ESTAR DENTRO DA VENV NA HORA DE INSTALAR E RODAR COMANDOS
         python manage.py collectstatic
     LISTAR TUDO QUE TEM INSTALADO DENTRO DA VM
         pip freeze > requirements.txt
+
+ANGULAR
+    
