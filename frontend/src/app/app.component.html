@@ -8,9 +8,13 @@
 <body>
   <h1>Members</h1>
   <ul>
-    <li *ngFor="let member of members">
+    <li *ngFor="let member of members" (click)="memberClicked(member)">
       {{member.id}} - {{member.name}}
     </li>
   </ul>
+
+  <p>{{selectedMember.id}} {{selectedMember.name}}</p>
+
+  <router-outlet></router-outlet>
 </body>
 </html>

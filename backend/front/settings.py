@@ -39,8 +39,15 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'core',
     "corsheaders",
-    'rest_framework'
+    'rest_framework',
+    'rest_framework.authtoken'
 ]
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication',
+    ]
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -130,7 +137,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-CROSS_ORIGIN_WHITELIST = {
+COSS_ORIGIN_WHITELIST = {
     "http://localhost:4200"
 }
 
