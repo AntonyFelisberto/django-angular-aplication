@@ -17,7 +17,7 @@ TENHA CERTEZA DE ESTAR DENTRO DA VENV NA HORA DE INSTALAR E RODAR COMANDOS
         python manage.py migrate
         python manage.py startapp core 
             core é o nome do seu app
-    DEPOIS DE ALTERAR MODELS DO CORE E SETTINGS DO front, TODA VEZ QUE ALTERAR MODELS E  COISAS DO CORE 
+    DEPOIS DE ALTERAR MODELS DO CORE E SETTINGS DO front, TODA VEZ QUE ALTERAR MODELS E COISAS DO CORE RODE ESSE COMANDO PARA COMPILAR AS CONFIGURAÇÕES DO BANCO DE DADOS E APLICAÇÃO
         python manage.py makemigrations
         python manage.py migrate
     CRIAR SUPER USER
